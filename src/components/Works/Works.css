@@ -1,0 +1,32 @@
+.works-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 100px;
+}
+
+.works-card {
+    padding: 80px 86px;
+    background-color: #F4F9FB;
+    text-align: center;
+    border-radius: 25px;
+
+}
+
+.works-card h1 {
+    color: #292929;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 121.5%;
+    padding-bottom: 20px;
+    /* 60.75px */
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+    .works-parent{
+        flex-direction: column;
+    }
+}

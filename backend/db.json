@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "surname": "Sharifjonov",
+      "name": "Behzod",
+      "mid_name": "Sherzod o'g'li",
+      "age": "18",
+      "phone": "337099939",
+      "email": "behzodsharifjonov7@gmail.com",
+      "password": "12345678",
+      "id": 1
+    },
+    {
+      "surname": "Sharifjonov",
+      "name": "Behzod",
+      "mid_name": "Sherzod o'g'li",
+      "age": "18",
+      "phone": "337099939",
+      "email": "behzodsharifjonov7@gmail.com",
+      "password": "12345678",
+      "id": 2
+    }
+  ]
+}

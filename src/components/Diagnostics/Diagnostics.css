@@ -1,0 +1,104 @@
+.diagnostics {
+    margin: 80px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.diagnostics-parent-first {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+
+}
+
+.diagnostics-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.diagnostics-card {
+    padding: 70px 20px;
+    width: 260px;
+    border-radius: 25px;
+    background-color: #F4F9FB;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+}
+
+.diagnostics-parent-first .diagnostics-child h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 125%;
+    /* 40px */
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.diagnostics-parent-first .diagnostics-child p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 21px */
+    color: #292929;
+}
+
+.diagnostics-parent-first .diagnostics-child button {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 21px */
+    color: white;
+    border: 1px solid #007DB6;
+    background-color: #007DB6;
+    margin-top: 20px;
+}
+
+.diagnostics-mobile-btn{
+    display: none;
+    background-color: #007DB6;
+    border: 1px solid #007DB6;
+    color: #fff;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:767px) {
+    .diagnostics-parent-first{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .diagnostics-parent{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .diagnostics-card{
+        width: 80%;
+    }
+    .diagnostics-pc-btn{
+        display: none;
+    }
+    .diagnostics-mobile-btn{
+        display: block;
+    }
+    
+}

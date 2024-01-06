@@ -1,0 +1,150 @@
+.section-kurs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.kurs {
+    border-radius: 20px;
+    width: 1160px;
+    background-color: #F4F9FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.kurs-child-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+    width: 718px;
+}
+
+.kurs .kurs-card .text {
+    padding-top: 50px;
+}
+
+.kurs-card {
+    padding: 24px 40px;
+    width: 526px;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.kurs-card-1 b {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #FF879F;
+}
+
+.kurs-child-1 .kurs-card p {
+    color: #fff;
+}
+
+.kurs-card-2 b {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #65B2D6;
+}
+
+.kurs-card-1 {
+    background-color: #FF879F;
+}
+
+.kurs-card-2 {
+    background-color: #65B2D6;
+}
+
+.kurs-child-2 {
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.kurs-child-2 h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 125%;
+    /* 40px */
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.kurs-child-2 p {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 21px */
+}
+
+.kurs-btn>button {
+    background-color: #007DB6;
+    border: 1px solid #007DB6;
+    color: white;
+}
+
+.kurs-mobile {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .kurs {
+        flex-direction: column;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .kurs-card h3 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 125%;
+        /* 30px */
+        text-transform: uppercase;
+    }
+
+    .kurs-mobile {
+        display: block;
+        width: 100%;
+        color: #fff;
+    }
+
+    .kurs-mobile p{
+        color: #fff;
+    }
+
+    .kurs-card-2{
+        width: 100%;
+    }
+
+    .kurs-pc {
+        display: none;
+    }
+
+    .kurs-btn>button {
+        width: 300px;
+    }
+}
