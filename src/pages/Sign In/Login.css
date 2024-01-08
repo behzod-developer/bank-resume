@@ -1,13 +1,13 @@
 
 
-.registor {
+.login {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
 }
 
-.registor-logo{
+.login-logo{
     width: 160px;
     padding: 43px 0;
 }
@@ -24,18 +24,18 @@ form {
     margin: 0 100px;
 }
 
-form>span {
-    padding-top: 10px;
+.login .form form>span {
+    padding-top: 30px;
 }
 
-.registor-image {
+.login-image {
     margin: auto;
     background-color: #DAF3FF;
-    height: 110vh;
+    height: 100vh;
     width: 100%;
 }
 
-.registor-image img{
+.login-image img{
     width: 40%;
     display: flex;
     align-items: flex-start;
@@ -44,34 +44,46 @@ form>span {
     left: 750px;
 }
 
-form input {
-    padding: 12px;
+.login .form form input {
+    padding: 14px;
+    font-size: 18px;
 }
 
-.registor-btn {
+.login-btn {
     border: 0;
     outline: 0;
     background-color: #007DB6;
     color: white;
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 20px!important;
+
 }
 
-.registor-login-btn{
+.login-login-btn{
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 30px;
     background-color: transparent;
     color: #007DB6;
     border: 0;
     font-size: 20px!important;
-
 }
 
 @media screen and (max-width:767px) {
-    .registor-image{
+    .login-image{
         display: none;
+    }
+    form{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    form > *{
+        width: 90%;
+    }
+    .form{
+        width: 100%;
     }
 }

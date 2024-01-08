@@ -19,6 +19,16 @@
       "email": "behzodsharifjonov7@gmail.com",
       "password": "12345678",
       "id": 2
+    },
+    {
+      "surname": "Ikromov ",
+      "name": "Kozim",
+      "mid_name": "Qosim o'g'li",
+      "age": "19",
+      "phone": "7777777",
+      "email": "behzodsharifjonov7@gmail.com",
+      "password": "1234567",
+      "id": 3
     }
   ]
 }

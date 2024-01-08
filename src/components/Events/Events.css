@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 4px;
+    margin: auto;
 }
 
 .events .container {
@@ -76,3 +77,4 @@
     line-height: 140%;
     /* 21px */
 }
+
