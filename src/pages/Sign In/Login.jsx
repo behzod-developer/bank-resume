@@ -6,18 +6,32 @@ import { useNavigate } from 'react-router-dom'
 
 function Login() {
   const navigate = useNavigate()
-  const shootRegistor = ()=> {
+
+  const shootRegistor = () => {
     navigate('/register')
   }
 
-  const shootHome = ()=>{
+  const shootHome = () => {
     navigate('/')
   }
+
+  const loginHandler = e => {
+    e.preventDefault()
+    const form = new FormData(e.target)
+    const { email, password } = Object.fromEntries(form.entries())
+    if (email == "bek@mail.ru" && password == "1") {
+      navigate("/")
+    }
+    else {
+      alert('e-mail yoki password xato')
+    }
+  }
+
   return (
     <div className="login-container">
       <div className="login">
         <div className="form">
-          <form  action="">
+          <form onSubmit={loginHandler} action="">
             <img onClick={shootHome} className='login-logo' src={login_logo} alt="" />
             <h1>Вход</h1>
             <span>E-mail</span>
@@ -26,7 +40,7 @@ function Login() {
             <input required type="password" name='password' placeholder='Пароль' />
             <button className='btn login-btn'>Вход</button>
           </form>
-          <button onClick={shootRegistor}  className='btn login-login-btn'>Зарегистрироваться</button>
+          <button onClick={shootRegistor} className='btn login-login-btn'>Зарегистрироваться</button>
         </div>
         <div className="login-image">
           <img src={login_image} alt="" />

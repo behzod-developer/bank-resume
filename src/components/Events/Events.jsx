@@ -12,7 +12,12 @@ function Events() {
                     events.map((item) => <EventsCard item={item} />)
                 }
             </div>
-            <button className='events-btns'>Смотреть еще</button>
+                <button className='events-btns'>Смотреть еще</button>
+            <div className="container-mobile">
+                {
+                    events.map((item) => <EventsCard item={item} />)
+                }
+            </div>
         </div>
     )
 }

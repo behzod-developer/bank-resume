@@ -24,10 +24,15 @@
     padding: 20px 150px;
 }
 
-.events-card {
+.events-card{
     width: 100%;
     background-color: #F4F9FB;
     height: 435px;
+    border-radius: 25px;
+}
+
+.container-mobile .events-card{
+    background-color: #F4F9FB;
     border-radius: 25px;
 }
 
@@ -78,3 +83,34 @@
     /* 21px */
 }
 
+.events .container-mobile{
+    display: none;
+    gap: 10px;
+}
+
+.container-mobile .events-card img{
+    border-radius: 25px;
+}
+
+@media screen and (max-width:767px){
+    .events .container{
+        display: none;
+    }
+    .events .container-mobile{
+        display: flex;
+        overflow-x: auto;
+        align-items: center;
+        margin: auto;
+        padding: 10px;
+
+    }
+    .events-card{
+        height: 100%;
+    }
+    .container-mobile .events-card > *{
+        width: 300px;
+    }
+    .events .events-btns{
+        display: none;
+    }
+}
