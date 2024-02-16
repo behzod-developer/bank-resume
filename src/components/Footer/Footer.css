@@ -1,0 +1,43 @@
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F9FB;
+}
+
+footer .parent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: start;
+    padding: 70px 12%;
+    text-align: left;
+    gap: 50px;
+}
+
+footer .parent .child{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+
+}
+
+footer button{
+    background-color: transparent;
+    color: royalblue;
+    border: none;
+    outline: 0;
+}
+
+@media screen and (max-width: 767px) {
+    footer{
+        flex-direction: column;
+    }
+
+    footer .parent{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+}
